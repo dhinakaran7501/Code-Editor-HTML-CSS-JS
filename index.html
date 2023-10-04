@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Editor</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <section id="code-editor">
+    <div class="container">
+      <div class="row">
+        <div class="col-5 left">
+          <div class="html-code">
+            <label for="html"><i class="fa-brands fa-html5"></i> HTML</label>
+            <textarea name="html" id="html" cols="69" rows="9.5"></textarea>
+          </div>
+          <div class="css-code">
+            <label for="css"><i class="fa-brands fa-css3-alt"></i> CSS</label>
+            <textarea name="css" id="css" cols="69" rows="9.5"></textarea>
+          </div>
+          <div class="js-code">
+            <label for="js"><i class="fa-brands fa-js"></i> JavaScript</label>
+            <textarea name="js" id="js" cols="69" rows="9.5"></textarea>
+          </div>
+        </div>
+        <div class="col-1 middle">
+          <button onclick="programRun()">Run</button>
+        </div>
+        <div class="col-6 right">
+          <label for="output" class="output"><i class="fa-solid fa-play"></i> Output</label>
+          <iframe id="output"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
